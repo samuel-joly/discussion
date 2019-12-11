@@ -1,0 +1,364 @@
+body
+{
+	margin:0px;
+	padding:0px;
+	background-color:black;
+}
+
+.greyScreen
+{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.7);
+	z-index:10;
+	
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+}
+
+.greyScreen img
+{
+	float:right;
+	width:20px;
+	height:20px;
+}
+
+.err
+{
+	padding:10px;
+	width:230px;
+	margin:auto;
+	background-color:black;
+	color:white;
+	border:3px solid white;
+	position:absolute;
+	z-index:11;
+	top:20%;
+	left:41.5%;
+}
+
+header
+{
+	width:100%;
+	height:75px;
+}
+
+header ul
+{
+	list-style:none;
+	display:flex;
+	width:50%;
+	justify-content:space-between;
+
+	position:relative;
+	top:10px;
+	
+	font-size:1.5em;
+}
+
+header ul li a
+{
+	text-decoration:none;
+	color:white;
+	opacity:0.4;
+	
+	transition:all 0.4s ease;
+}
+
+header ul li a:hover
+{
+	opacity:1;
+	font-size:1.4em;
+}
+
+header ul li a img
+{
+	height:35px;
+}
+
+#presentation
+{
+	margin:auto;
+	padding:-15px;
+	width:50%;
+	height:60%;
+	position:relative;
+	top:70px;
+	
+	border:4px solid white;
+	background-color:rgba(250,250,250,0.7);
+	width:50%;
+}
+
+.title
+{
+	text-align:center;
+	font-size:2em;
+	text-decoration:underline;
+}
+
+
+#description
+{
+	width:80%;
+	margin:auto;
+}
+
+
+#definition
+{
+	height:95px;
+	float:left;
+	margin-bottom:-15px;
+	margin-right:7px;
+}
+
+#arguments
+{
+	position:relative;
+	top:15px;
+}
+
+#inscription
+{
+	width:300px;
+	height:auto;
+	margin:auto;
+	
+	border:4px solid white;
+	background-color:rgba(250,250,250,0.7);
+	
+}
+#inscription p
+{
+	font-size:2em;
+	text-align:center;
+}
+
+
+#subForm
+{
+	margin:auto;
+	margin-top:-20px;
+	padding:5px;
+}
+
+.inputZone
+{
+	display:flex;
+	justify-content:space-evenly;
+}
+
+.inputZone > *
+{
+	width:50%;
+}
+
+.inputZone input
+{
+	border:2px solid white;
+	margin:3px;
+	padding-left:2px;
+	background-color:black;
+	color:white;
+	transition:all 0.4s ease;
+}
+
+.submitZone input
+{
+	cursor:pointer;
+}
+
+.submitZone input:hover
+{
+	background-color:white;
+	color:black;
+}
+
+.inputZone input:focus
+{
+	background-color:white;
+	color:black;
+}
+
+#inscriptionBtn
+{
+	display:flex;
+	flex-direction:column;
+	margin-top:50px;
+}
+
+#inscriptionBtn a
+{
+	padding:5px;
+	background-color:black;
+	
+	font-size:1.4em;
+	color:white;
+	
+	width:40%;
+	border:4px solid white;
+	text-align:center;
+	margin:auto;
+	margin-top:10px;
+	
+	transition:background-color 0.4s ease;
+}
+
+#inscriptionBtn a:hover 
+{
+	background-color:white;
+	color:black;
+}
+
+#discussion-form 
+{
+	width:500px;
+	margin:auto;
+	height:auto;
+}
+
+#discussion-form  form
+{
+	display:flex;
+	flex-direction:column;
+	text-align:center;
+	margin:auto;
+	margin-bottom:10px;
+}
+
+#discussion-form form textarea
+{
+	padding:5px;
+	background: black;
+	
+	font-size:1.4em;
+	color:white;
+	
+	border-radius:10px;
+	border:3px solid white;
+	
+	margin:auto;
+	margin-top:10px;
+	
+	overflow:hidden;
+	
+}
+
+#discussion-form form textarea:focus
+{
+	transition:all 0.4s ease;
+	background: white;
+	color:black;
+	width:500px;
+}
+
+#discussion-form form input
+{
+	border:2px solid white;
+	margin:3px;
+	padding-left:2px;
+	background: black;
+	color:white;
+	cursor:pointer;
+}
+
+#discussion-form form input:hover
+{
+	transition:all 0.5s ease;
+	background: white;
+	color:black;
+}
+
+
+.bubble {
+    position: relative;
+	right:-7%;
+    background-color:black;
+	color:white;
+    border:5px solid white;
+
+    
+    width: 250px;
+	max-width:500px;
+	overflow:hidden;
+	
+    height: 120px;
+	
+	margin:auto;
+	margin-top:20px;
+}
+
+.bubbleLeft {
+    position: relative;
+	right:7%;
+    background-color:black;
+    border:5px solid white;
+    color: white;
+    
+    
+	width: 250px;
+	max-width:500px;
+	overflow:hidden;
+
+    height: 120px;
+	
+	margin:auto;
+	
+	margin-top:20px;
+}
+
+
+
+.info_auteur
+{
+	height:8%;
+	border-bottom:1px solid white;
+}
+
+.info_auteur p
+{
+	position:relative;
+	bottom:10px;left:4px;
+}
+
+
+#profil
+{
+	width:20%;
+	margin:auto;
+	border-right:1px solid;
+	border-image:linear-gradient(to top, transparent, white, transparent)1 100%;
+	background-color:rgba(250,250,250,0.7);
+	
+	display:flex;
+	flex-direction:column;
+}
+
+#profilPic
+{
+	margin:auto;
+	margin-top:5px;
+	margin-bottom:5px;
+
+	border-radius:50%;
+	border:5px solid white;
+
+	width:75px;
+	height:75px;
+
+	padding:-5px;
+}
+
+#profilPicDisc
+{
+	border-radius:50%;
+	width:28px;
+	height:24px;
+	float:left;
+	
+	position:relative;
+	bottom:5px;
+}
