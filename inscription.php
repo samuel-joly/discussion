@@ -1,13 +1,3 @@
-<?php
-
-	if(isset($_SESSION['logged_in'])) 
-	{
-		header('location:index.php?err=3');
-	}
-	
-?>
-
-
 <html lang='fr'>
 
 	<head>
@@ -54,6 +44,11 @@
 
 
 <?php
+
+	if(isset($_SESSION['logged_in'])) 
+	{
+		header('location:index.php?error=3');
+	}
 	
 	if(isset($_POST["submitBtn"]))
 	{
