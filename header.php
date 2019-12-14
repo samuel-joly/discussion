@@ -73,6 +73,12 @@
 				<p class="err"> Mauvais mot de passe <a href="connexion.php"><img src="Images/closeBtn.png"/></a></p>
 			</div>
 <?php	}
+		else if ($_GET["error"] == 7)
+		{ ?>
+			<div class="greyScreen">
+				<p class="err">Vous etes déja inscrit<a href="index.php"><img src="Images/closeBtn.png"/></a></p>	
+			</div>
+<?php	}
 	}
 ?>
 

@@ -1,5 +1,10 @@
 <?php
 	$conn = mysqli_connect("localhost","root","","discussion");
+	
+		if(!isset($_SESSION["logged_in"])) 
+		{
+			header("location:connexion.php");
+		} 
 ?>
 <html lang='fr'>
 
@@ -14,14 +19,7 @@
 			<?php include('header.php'); ?>
 		</header>
 
-<?php   if(!isset($_SESSION["logged_in"])) 
-		{?>
-			<div class="greyScreen">
-				<p class="err">Vous devez etre connecté pour accéder a cette partie du site<a href="connexion.php"><img src="Images/closeBtn.png"/></a></p>
-			</div>
-<?php	}
-
-		$profilImg = mysqli_fetch_row(mysqli_query($conn,"SELECT image FROM utilisateurs WHERE id = '".$_SESSION["id"]."'"));
+<?php	$profilImg = mysqli_fetch_row(mysqli_query($conn,"SELECT image FROM utilisateurs WHERE id = '".$_SESSION["id"]."'"));
 		?>
 		<main id="profil">
 			<img src="<?php echo $profilImg[0]; ?>" alt="profilImg" id="profilPic"/>
