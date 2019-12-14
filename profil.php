@@ -121,6 +121,8 @@
 						WHERE id = '".$_SESSION["id"]."'";
 						mysqli_query($conn,$requestNPassword);
 					}
+					
+					header("location:profil.php");
 				}
 				else
 				{
