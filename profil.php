@@ -1,10 +1,5 @@
 <?php
 	$conn = mysqli_connect("localhost","root","","discussion");
-	
-		if(!isset($_SESSION["logged_in"])) 
-		{
-			header("location:connexion.php");
-		} 
 ?>
 <html lang='fr'>
 
@@ -65,6 +60,10 @@
 
 <?php
 
+	if(!isset($_SESSION['logged_in'])) 
+	{
+		header("location:connexion.php");
+	}
 	if(isset($_POST["submitBtn"]))
 	{
 		if(!empty($_POST["password"]) && !empty($_POST["passwordV"]))
