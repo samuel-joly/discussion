@@ -279,8 +279,7 @@ header ul li a img
     background-color:black;
 	color:white;
     border:5px solid white;
-
-    
+	
     width: 250px;
 	max-width:500px;
 	overflow:hidden;
@@ -310,7 +309,10 @@ header ul li a img
 	margin-top:20px;
 }
 
-
+.bubble p , .bubbleLeft p
+{
+	word-wrap: break-word;
+}
 
 .info_auteur
 {
