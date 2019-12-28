@@ -1,6 +1,7 @@
 <?php
 	$conn = mysqli_connect("localhost","root","","discussion");
 ?>
+
 <html lang='fr'>
 
 	<head>
